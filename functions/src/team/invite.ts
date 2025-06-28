@@ -4,12 +4,11 @@
  */
 
 import {onCall, HttpsError} from "firebase-functions/v2/https";
-import {getAuth} from "firebase-admin/auth";
-import {getFirestore} from "firebase-admin/firestore";
+import * as admin from "firebase-admin";
 import * as logger from "firebase-functions/logger";
 
-const db = getFirestore();
-const auth = getAuth();
+const db = admin.firestore();
+const auth = admin.auth();
 
 export const inviteTeamMember = onCall(async (request) => {
   const {name, email, role} = request.data;
