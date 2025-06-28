@@ -13,4 +13,6 @@ admin.initializeApp();
 // Export functions from their respective modules
 export * from "./team/invite";
 export * from "./invoicing/receivables";
+export * from "./invoicing/deleteInvoice";
+
 
