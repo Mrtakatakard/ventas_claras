@@ -14,5 +14,6 @@ admin.initializeApp();
 export * from "./team/invite";
 export * from "./invoicing/receivables";
 export * from "./invoicing/deleteInvoice";
+export * from "./whatsapp/sync";
 
 
